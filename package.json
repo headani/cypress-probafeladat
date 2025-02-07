@@ -1,0 +1,11 @@
+{
+  "name": "cypress-probafeladat",
+  "version": "1.0.0",
+  "scripts": {
+    "cy:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^14.0.2",
+    "playwright-webkit": "^1.50.1"
+  }
+}
