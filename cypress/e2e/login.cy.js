@@ -6,7 +6,9 @@ describe('User Login', () => {
   });
 
   it('should log in with valid credentials', () => {
+    // itt miért így oldottad meg?
     cy.get('#username').clear().type('becsei.ani98@gmail.com');
+
     cy.get('#password').type('Te$tuser15?4&');
     cy.get('button').contains('Belépés').click();
     cy.get('.woocommerce-MyAccount-content').contains('Üdv');
@@ -31,4 +33,7 @@ describe('User Login', () => {
     cy.checkValidationMessage('#username');
     cy.checkValidationMessage('#password');
   });
+
+
+  // készítettél egy login segédfüggvényt, amit használhattál volna itt is
 });
